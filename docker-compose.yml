@@ -1,1 +1,8 @@
-
+services:
+  python-lab:
+    build:
+      context: .
+    container_name: python-lab
+    restart: unless-stopped
+    ports:
+      - "8001:8000"
