@@ -18,3 +18,11 @@ def health():
     return {
         "status": "healthy"
     }
+
+@app.get("/info")
+def info():
+    return {
+        "project": "python-lab",
+        "environment": "development",
+        "managed_by": "Portainer"
+    }
